@@ -2,9 +2,25 @@
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
+var autoprefixer     = require('autoprefixer');
+var customProperties = require('postcss-custom-properties');
+var imports          = require('postcss-import');
+
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    cssModules: {
+      concat: {
+        headerFiles: ['styles/app.css'],
+        exclude: ['styles/base/**']
+      },
+      plugins: function(load) {
+        return [
+          imports({ load: load }),
+          customProperties,
+          autoprefixer('last 2 versions')
+        ];
+      }
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

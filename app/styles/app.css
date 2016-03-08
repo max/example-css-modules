@@ -1,0 +1,13 @@
+@import "normalize.css";
+@import "basscss";
+
+/* Base */
+@import "base/something";
+
+:root {
+  --h1: 5px;
+}
+
+body {
+  background: red;
+}

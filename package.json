@@ -19,6 +19,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "basscss": "^8.0.1",
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
     "ember-cli": "2.4.2",
@@ -32,11 +34,15 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
+    "ember-css-modules": "github:salsify/ember-css-modules#configure-concatenation",
     "ember-data": "^2.4.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-load-initializers": "^0.5.0",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.0"
+    "loader.js": "^4.0.0",
+    "normalize.css": "^3.0.3",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^8.0.2"
   }
 }
